@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+
+<head > 
+	<meta charset="utf-8"> 
+	<title> 
+		Get min and max from an array 
+	</title> 
+</head> 
+
+<body style="text-align: center;" > 
+    <header>
+	    <h1 style="font-style: oblique;"> 
+		    Pro_calculations 
+	    </h1> 
+    </header>
+    <h3 id="po">Input Array Elements</h3> 
+    <hr>
+    <form class="" action="index.html" method="post" style="background-color: hotpink;"> 
+        <br>
+		<input type="text" name="array[]" value="" /><br> 
+		<input type="text" name="array[]" value="" /><br> 
+		<input type="text" name="array[]" value="" /><br> 
+		<input type="text" name="array[]" value="" /><br> 
+		<input type="text" name="array[]" value="" /><br><br> 
+		<button type="button" name="button" onclick="func()"> 
+			Find min and max
+        </button>
+        <br> 
+	</form> 
+	<br> 
+
+	<p id="par" style="color:deeppink;"></p> 
+
+	<script type="text/javascript"> 
+		var k = "The minimum and maximum values are :"; 
+		function func() { 
+            var mini=Infinity;
+            var maxi=-Infinity;
+			var input = document.getElementsByName('array[]'); 
+
+			for (var i = 0; i < input.length; i++) { 
+				var a = input[i]; 
+                if(a.value<mini)
+                    mini=a.value;
+                if(a.value>maxi)
+                    maxi=a.value;
+			} 
+            console.log(maxi);
+			document.getElementById("par").innerHTML = k+mini+" "+maxi; 
+			document.getElementById("po").innerHTML = "Look you got the answer!!"; 
+		} 
+    </script> 
+    <section>
+        
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+        <br>
+        <small>follow us for more <code>tutorials!</code></small>
+    </section>
+
+      <footer>
+        <p>Author: Yash Gawande<br>
+        <a href="w3schools.com">nothing.com</a></p>
+      </footer>
+
+</body> 
+
+</html> 
