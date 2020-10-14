@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UPSC 20-21</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS1.css">
+        <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 550px;;
+          }
+        </style>
+        <h1 style="text-align: center">UPSC registration form 20-21</h1>
+
+    </head>
+    <body style="background-color:indianred;">
+        
+        <h1 style="text-align: center;"></h1>
+        <img src="logo.jpg" width="600" height="300" class="center">
+        <br>
+
+        <style>
+            .myDiv {
+              border: 3px outset red;
+              background-color:lightcoral;
+              text-align: center;
+              margin-left: 27%;
+              margin-right: 27%;
+            }
+        </style>
+        
+    <div class="myDiv" style="align-items:center; "> 
+
+    <form action="" method="get" onsubmit="sub()">
+     
+    <fieldset>
+        <legend style="text-align: center;">Student Information</legend>
+
+        <label for="name">First Name :</label> 
+        <input type="text" required  placeholder="Enter name"/><br>
+        <label for="name">Middle Name:</label> 
+        <input type="text" required placeholder="Middle name"/><br>
+        <label for="name">Last Name:</label>
+        <input type="text" required placeholder="Last name"/><br>
+        <label for="name">Mother's Name:</label>
+        <input type="text" required placeholder="Mother's name"/><br>
+        <label for="number">Mobile no.:</label>
+        <input type="number" required placeholder="Mobile no."/><br>
+        <label for="number">E-mail id:</label>
+        <input type="email" required placeholder="E-mail id"/><br>
+        <label for="name">Address:</label>
+        <input type="text" required placeholder="Address"/><br>
+
+        <label for="pdf">Upload your Addhar card/PAN card for id proof:</label> <br>
+        <input type="file" accept=".pdf"  required /> <br><br>
+
+        <label >Do you want copy of form:</label>
+        <input type='checkbox' > <br> 
+         
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Educational Information</legend>
+        
+            <label for="Qualification">Your Qualification:</label>
+            <select name="Qualification" id="Qualification" required size="1" >
+              <option value="">B.Tech</option>
+              <option value="">M.Tech</option>
+              <option value="">B.E.</option>
+              <option value="">B.Com</option>
+              <option value="">B.Sc</option>
+            </select>
+            <br>
+            <label for="Branch">Branch</label>
+            <select name="Branch" id="Branch" required size="1" multiple>
+              <option value="">CSE</option>
+              <option value="">IT</option>
+              <option value="">EEE</option>
+              <option value="">ELE</option>
+              <option value="">Mech</option>
+              <option value="">Civil</option>
+            </select>
+            <br>
+            <label for="College">Choose your College from the list:</label>
+            <input list="College" name="College">
+            <datalist id="College">
+                <option value="WCE, Sangli">
+                <option value="COEP">
+                <option value="VJTI, Mumbai">
+                <option value="PICT">
+                <option value="IITB">
+            </datalist>
+            <br>
+            <label>Exam Seat no.:</label>
+            <input type="text" required placeholder="Exam Seat no."><br>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Exam Preferences</legend>
+        <label for="Qualification">Your Exam Paper Branch:</label>
+            <select name="Qualification" id="Qualification" required size="1" >
+              <option value="">B.Tech</option>
+              <option value="">M.Tech</option>
+              <option value="">B.E.</option>
+              <option value="">B.Com</option>
+              <option value="">B.Sc</option>
+            </select>
+        <br>
+        <label for="cars">Select college:</label>
+            <select name="College" id="College">
+              <optgroup label="Maharashtra">
+                <option value="WCE, Sangli">WCE, Sangli</option>
+                <option value="IITB">IITB</option>
+                <option value="COEP">COEP</option>
+                <option value="PICT">PICT</option>
+              </optgroup>
+              <optgroup label="Uttar Pradesh">
+                <option value="IIT kanpur">IIT kanpur</option>
+              </optgroup>
+              <optgroup label="Madhya Pradesh">
+                <option value="IIT Indore">IIT kanpur</option>
+              </optgroup>
+            </select>
+
+    </fieldset>
+    <br>
+        <button type="submit" style="text-align: center;"> Submit </button><br>
+        <button type="reset" style="text-align: center;"> Reset</button> 
+        <br>
+
+     </form>
+         
+     </div>
+
+
+        <script> 
+        function sub(){
+
+            window.alert("Successfully submitted your form")
+        }
+        </script>
+       
+    </body>
+</html>
